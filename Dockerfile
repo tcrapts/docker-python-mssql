@@ -31,5 +31,5 @@ ARG DATABASE
 ENV DATABASE=${DATABASE}
 
 # configure container
-COPY /script /script
-WORKDIR /script
+WORKDIR /app
+ENTRYPOINT ["python", "-u"]
