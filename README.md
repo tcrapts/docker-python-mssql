@@ -3,5 +3,5 @@ __docker-python-mssql__ provides a reference for connecting to a MSSQL database 
 
 ## Usage
 * Rename `.env.example` to `.env` and set the required environment variables.
-* Build the image: ```docker-compose build```
-* Run `/scripts/run.py` folder: ```docker run python-mssql run.py```
+* Build image: ```docker-compose build```
+* Run `/scripts/run.py`: ```docker run python-mssql python run.py```

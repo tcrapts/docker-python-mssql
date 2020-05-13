@@ -1,8 +1,6 @@
 version: '3'
 services:
     processor:
-        volumes:
-            - "/script:/app"      
         build:
             context: .
             args:
@@ -10,4 +8,4 @@ services:
                 - DB_USER=${DB_USER}
                 - DB_PASSWORD=${DB_PASSWORD} 
                 - DATABASE=${DATABASE}
-        image: python-mssql           
+        image: python-mssql       

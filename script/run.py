@@ -10,7 +10,7 @@ database = os.environ['DATABASE']
 connection =pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';PORT=1443;UID='+username+';PWD='+ password+';DATABASE='+database)
 
 # read query
-query = 'select * from table'
+query = 'select top(10) * from tblRefBookingVersions'
 cursor = connection.cursor()
 cursor.execute(query)
 df = pd.DataFrame([tuple(t) for t in cursor.fetchall()]) 

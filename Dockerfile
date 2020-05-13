@@ -33,4 +33,3 @@ ENV DATABASE=${DATABASE}
 # configure container
 COPY /script /script
 WORKDIR /script
-ENTRYPOINT ["python", "-u"]
