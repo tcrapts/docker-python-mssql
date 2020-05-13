@@ -20,16 +20,6 @@ RUN odbcinst -j
 RUN pip install pandas &&\
     pip install pyodbc
 
-# configure credentials
-ARG SERVER
-ENV SERVER=${SERVER}
-ARG DB_USER
-ENV DB_USER=${DB_USER}
-ARG DB_PASSWORD
-ENV DB_PASSWORD=${DB_PASSWORD}
-ARG DATABASE
-ENV DATABASE=${DATABASE}
-
 # configure container
-COPY /script /script
 WORKDIR /script
+ENTRYPOINT [ "python", "-u" ]
