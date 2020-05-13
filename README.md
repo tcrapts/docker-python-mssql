@@ -8,4 +8,3 @@ __docker-python-mssql__ provides a reference for connecting to a MSSQL database 
 * Run the query:
     * PowerShell/Ubuntu: `docker run --env-file=.env -v ${PWD}:/script python-mssql script/run.py`
     * Windows Command Line (cmd): `docker run --env-file=.env -v %cd%:/app python-mssql script/run.py`
-
