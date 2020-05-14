@@ -18,5 +18,5 @@ docker run --env-file=.env -v ${PWD}:/script python-mssql run.py query/query.sql
 ```
 Windows Command Line (cmd):
 ```sh
-docker run --env-file=.env -v %cd%:/app python-mssql run.py query/query.sql
+docker run --env-file=.env -v %cd%:/script python-mssql run.py query/query.sql
 ```
