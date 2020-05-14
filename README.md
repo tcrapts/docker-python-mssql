@@ -4,7 +4,8 @@ __docker-python-mssql__ provides a reference for connecting to a MSSQL database 
 ## Usage
 * Rename `.env.example` to `.env` and set the required environment variables.
 * Rename `query.sql.example` to `query.sql` and enter a valid query.
-* Build image: ```docker build -t python-mssql .```
+* Build image:
+```docker build -t python-mssql .```
 * Run `query/query.sql`:
     * PowerShell/Ubuntu: `docker run --env-file=.env -v ${PWD}:/script python-mssql run.py query/query.sql`
     * Windows Command Line (cmd): `docker run --env-file=.env -v %cd%:/app python-mssql run.py query/query.sql`
