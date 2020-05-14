@@ -11,6 +11,7 @@ docker build -t python-mssql .
 ```
 ### Run image
 Run `query/query.sql`.
+
 PowerShell/Ubuntu:
 ```sh
 docker run --env-file=.env -v ${PWD}:/script python-mssql run.py query/query.sql
