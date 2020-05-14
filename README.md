@@ -9,5 +9,10 @@ __docker-python-mssql__ provides a reference for connecting to a MSSQL database 
 docker build -t python-mssql .
 ```
 * Run `query/query.sql`:
-    * PowerShell/Ubuntu: `docker run --env-file=.env -v ${PWD}:/script python-mssql run.py query/query.sql`
-    * Windows Command Line (cmd): `docker run --env-file=.env -v %cd%:/app python-mssql run.py query/query.sql`
+    * PowerShell/Ubuntu: ```sh
+    docker run --env-file=.env -v ${PWD}:/script python-mssql run.py query/query.sql
+    ```
+    * Windows Command Line (cmd):
+    ```sh
+    docker run --env-file=.env -v %cd%:/app python-mssql run.py query/query.sql
+    ```
